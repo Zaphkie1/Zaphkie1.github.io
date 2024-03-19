@@ -1,0 +1,80 @@
+/* inicioStyle.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #5d9eff, #000000);
+    background-repeat: no-repeat; /* Evitar que el degradado se repita */
+    background-size: auto 100vh; /* Adaptar el degradado al largo de la página */
+    color: #fff;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 10px; /* Agregar margen inferior para separar el buscador del selector de categorías */
+}
+
+/* Agregar estilos para las tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-height: 70vh; /* Altura máxima del contenedor de tarjetas */
+    overflow-y: auto; /* Habilitar el desplazamiento vertical si se excede la altura máxima */
+}
+
+/* Estilos para el scrollbar en navegadores webkit (Chrome, Safari, etc.) */
+.card-container::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: transparent; /* Fondo del scrollbar */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del scrollbar */
+    border-radius: 4px; /* Borde del scrollbar */
+}
+
+.card {
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(15, 15, 15);
+    width: 300px; /* Ancho de la tarjeta */
+    overflow: hidden; /* Ocultar el contenido que se desborde */
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+.card-header {
+    padding: 10px;
+    background-color: #333;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body p {
+    margin: 5px 0;
+}
